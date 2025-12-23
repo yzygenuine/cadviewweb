@@ -27,9 +27,9 @@
   <meta name="apple-mobile-web-app-title" content="CAD FastView King">
 
   <link rel="preconnect" href="https://apps.apple.com">
-  <link rel="preconnect" href="https://docs.qq.com">
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2316a34a'/%3E%3Cstop offset='1' stop-color='%230ea5e9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='128' height='128' rx='28' fill='url(%23g)'/%3E%3Cpath d='M28 92l18-56h12l-18 56H28zm36 0l18-56h12l-18 56H64zm36 0l18-56h12l-18 56H100z' fill='white' opacity='.9'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" href="./pics/icon.png">
+  <link rel="apple-touch-icon" href="./pics/icon.png">
 
   <script type="application/ld+json">
     {
@@ -120,12 +120,17 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: 800;
-      letter-spacing: 0.5px;
-      color: white;
       background: linear-gradient(45deg, #16a34a, #0ea5e9);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
       flex: 0 0 auto;
+      overflow: hidden;
+    }
+
+    .app-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .logo-title {
@@ -334,51 +339,12 @@
       box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
     }
 
-    .mock-shot {
-      height: 260px;
-      padding: 18px;
-      display: grid;
-      place-items: center;
-      background: radial-gradient(circle at 20% 20%, rgba(34, 197, 94, 0.25), transparent 55%),
-        radial-gradient(circle at 80% 30%, rgba(14, 165, 233, 0.3), transparent 55%),
-        linear-gradient(180deg, rgba(15, 23, 42, 0.06), rgba(15, 23, 42, 0.02));
-    }
-
-    .phone {
-      width: min(210px, 70%);
-      aspect-ratio: 9 / 19.5;
-      border-radius: 26px;
-      background: #0f172a;
-      padding: 10px;
-      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.3);
-      position: relative;
-    }
-
-    .phone::before {
-      content: "";
-      position: absolute;
-      top: 8px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 46%;
-      height: 10px;
-      border-radius: 99px;
-      background: rgba(255, 255, 255, 0.14);
-    }
-
-    .screen {
-      height: 100%;
-      border-radius: 18px;
-      background: linear-gradient(135deg, rgba(14, 165, 233, 0.88), rgba(34, 197, 94, 0.88));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 14px;
-      color: white;
-      font-weight: 900;
-      letter-spacing: 0.2px;
-      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    .screenshot-item img {
+      width: 100%;
+      height: 320px;
+      object-fit: contain;
+      background: rgba(248, 250, 252, 1);
+      display: block;
     }
 
     .screenshot-caption {
@@ -521,7 +487,9 @@
     <div class="container">
       <div class="header-content">
         <a class="logo" href="https://apps.apple.com/us/app/cad-fastview-king-dwg-viewer/id6461084049" target="_blank" rel="noopener">
-          <div class="app-icon">CAD</div>
+          <div class="app-icon">
+            <img src="./pics/icon.png" alt="CAD FastView King app icon">
+          </div>
           <div class="logo-title">
             <h1>CAD FastView King</h1>
             <div class="tagline">DWG/DXF Viewer · CAD to PDF · iCloud Sync</div>
@@ -598,67 +566,55 @@
       <section class="screenshots-section">
         <div class="section-header">
           <h3>How It Works</h3>
-          <p>A simple flow for reviewing drawings, exporting PDFs, and sharing results from your phone or tablet.</p>
+          <p>Real screenshots from iPhone and iPad showing key workflows.</p>
         </div>
 
         <div class="screenshots-grid">
           <div class="screenshot-item">
-            <div class="mock-shot">
-              <div class="phone"><div class="screen">Import</div></div>
-            </div>
+            <img src="./pics/iphone_1_dwg_dxf_dws_dwt.jpg" alt="iPhone screenshot - open DWG/DXF/DWS/DWT files" loading="lazy">
             <div class="screenshot-caption">
-              <h4>Import Drawings</h4>
-              <p>Open DWG/DXF/DWT/PDF files from your device and start working immediately.</p>
+              <h4>Open CAD Files</h4>
+              <p>Quickly view drawings in formats like DWG/DXF/DWS/DWT.</p>
             </div>
           </div>
 
           <div class="screenshot-item">
-            <div class="mock-shot">
-              <div class="phone"><div class="screen">View</div></div>
-            </div>
+            <img src="./pics/iphone_2_Convert%20CAD%20docs%20to%20PDF.jpg" alt="iPhone screenshot - convert CAD docs to PDF" loading="lazy">
             <div class="screenshot-caption">
-              <h4>Fast View & Zoom</h4>
-              <p>Navigate drawings smoothly with high-definition rendering and multiple zoom levels.</p>
+              <h4>Convert to PDF</h4>
+              <p>Export drawings as PDF for easier communication and sharing.</p>
             </div>
           </div>
 
           <div class="screenshot-item">
-            <div class="mock-shot">
-              <div class="phone"><div class="screen">Layers</div></div>
-            </div>
+            <img src="./pics/iphone_3_Multi-functional%20viewing%20model.jpg" alt="iPhone screenshot - multi-functional viewing model" loading="lazy">
             <div class="screenshot-caption">
-              <h4>Layer Layout</h4>
-              <p>Toggle layers and adjust viewing settings to focus on the details you need.</p>
+              <h4>Viewing Options</h4>
+              <p>Switch viewing modes and settings to match your workflow.</p>
             </div>
           </div>
 
           <div class="screenshot-item">
-            <div class="mock-shot">
-              <div class="phone"><div class="screen">PDF</div></div>
-            </div>
+            <img src="./pics/IPAD-1.jpg" alt="iPad screenshot 1" loading="lazy">
             <div class="screenshot-caption">
-              <h4>Export to PDF</h4>
-              <p>Convert CAD drawings to PDF for convenient communication and sharing.</p>
+              <h4>iPad Screenshot 1</h4>
+              <p>Optimized for larger screens for comfortable reviewing.</p>
             </div>
           </div>
 
           <div class="screenshot-item">
-            <div class="mock-shot">
-              <div class="phone"><div class="screen">Sync</div></div>
-            </div>
+            <img src="./pics/IPAD-2.jpg" alt="iPad screenshot 2" loading="lazy">
             <div class="screenshot-caption">
-              <h4>iCloud Sync</h4>
-              <p>Keep drawings in sync across Apple devices so work stays continuous.</p>
+              <h4>iPad Screenshot 2</h4>
+              <p>Work smoothly across projects with tablet-friendly UI.</p>
             </div>
           </div>
 
           <div class="screenshot-item">
-            <div class="mock-shot">
-              <div class="phone"><div class="screen">Print</div></div>
-            </div>
+            <img src="./pics/IPAD-3.jpg" alt="iPad screenshot 3" loading="lazy">
             <div class="screenshot-caption">
-              <h4>Wi‑Fi Print</h4>
-              <p>Print drawings when you need a hard copy on site or in the office.</p>
+              <h4>iPad Screenshot 3</h4>
+              <p>Designed for reading details and collaboration on iPad.</p>
             </div>
           </div>
         </div>
@@ -686,8 +642,8 @@
 
         <div class="footer-section">
           <h4>Legal</h4>
-          <p><a href="https://docs.qq.com/doc/DRFR5Z2hwTVBZcFRK" target="_blank" rel="noopener">Privacy Policy</a></p>
-          <p><a href="https://docs.qq.com/doc/DT3RmeHhXQ1Zaelpy" target="_blank" rel="noopener">User Agreement</a></p>
+          <p><a href="./privacy_policy.html">Privacy Policy</a></p>
+          <p><a href="./user_agreement.html">User Agreement</a></p>
         </div>
 
         <div class="footer-section">
@@ -703,4 +659,3 @@
   </footer>
 </body>
 </html>
-
