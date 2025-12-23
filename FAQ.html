@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ & Technical Support | CAD FastView King</title>
+  <meta name="description" content="Frequently Asked Questions and Technical Support for CAD FastView King.">
+  <link rel="icon" type="image/png" href="./pics/icon.png">
+  <link rel="apple-touch-icon" href="./pics/icon.png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #0f172a;
+      background: linear-gradient(135deg, #0ea5e9 0%, #22c55e 100%);
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(10px);
+      padding: 1rem 0;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: inherit;
+      min-width: 0;
+    }
+
+    .app-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      overflow: hidden;
+      flex: 0 0 auto;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+    }
+
+    .app-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .logo-title {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .logo-title h1 {
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 1.2;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .tagline {
+      font-size: 12px;
+      color: #475569;
+      margin-top: 2px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 14px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 800;
+      background: rgba(15, 23, 42, 0.08);
+      color: #0f172a;
+      transition: transform 0.2s ease, background 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .back-link:hover {
+      background: rgba(15, 23, 42, 0.12);
+      transform: translateY(-1px);
+    }
+
+    main {
+      padding: 40px 0 64px;
+    }
+
+    .content {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .content h2 {
+      font-size: 34px;
+      font-weight: 900;
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
+
+    .muted {
+      color: #475569;
+      font-size: 14px;
+      margin-bottom: 22px;
+    }
+
+    .content h3 {
+      font-size: 18px;
+      font-weight: 900;
+      color: #0f172a;
+      margin-top: 22px;
+      margin-bottom: 10px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(15, 23, 42, 0.12);
+    }
+
+    .content h3:first-of-type {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    .qa {
+      border: 1px solid rgba(15, 23, 42, 0.12);
+      border-radius: 16px;
+      padding: 14px 16px;
+      background: rgba(248, 250, 252, 1);
+      margin: 10px 0;
+    }
+
+    .q {
+      font-weight: 900;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+
+    .a {
+      color: #334155;
+    }
+
+    .note {
+      margin-top: 18px;
+      border-radius: 14px;
+      padding: 14px 16px;
+      background: rgba(14, 165, 233, 0.08);
+      color: #0f172a;
+    }
+
+    .note a {
+      color: #0ea5e9;
+      text-decoration: none;
+      font-weight: 900;
+    }
+
+    .note a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .back-link {
+        width: 100%;
+      }
+
+      .content {
+        padding: 30px 20px;
+      }
+
+      .content h2 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a class="logo" href="./index.html">
+          <div class="app-icon">
+            <img src="./pics/icon.png" alt="CAD FastView King app icon">
+          </div>
+          <div class="logo-title">
+            <h1>CAD FastView King</h1>
+            <div class="tagline">FAQ & Technical Support</div>
+          </div>
+        </a>
+        <a class="back-link" href="./index.html">← Back to Home</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="content">
+        <h2>FAQ & Technical Support</h2>
+        <div class="muted">Common questions about viewing, importing, exporting, and subscriptions.</div>
+
+        <h3>Getting Started</h3>
+        <div class="qa">
+          <div class="q">What file formats are supported?</div>
+          <div class="a">CAD FastView King supports viewing common CAD files including DWG, DXF, DWT, and PDF.</div>
+        </div>
+        <div class="qa">
+          <div class="q">How do I import files from other apps?</div>
+          <div class="a">Use iOS “Open in…” from the source app and select CAD FastView King. See the step-by-step guide on the <a href="./import_from_other_apps_tutorial.html">Import Tutorial</a> page.</div>
+        </div>
+
+        <h3>Viewing & Display</h3>
+        <div class="qa">
+          <div class="q">Why does a drawing look different after opening?</div>
+          <div class="a">Different drawings can include custom fonts, external references, or complex layers. Try switching viewing modes/backgrounds and check layer visibility.</div>
+        </div>
+        <div class="qa">
+          <div class="q">Can I manage layers?</div>
+          <div class="a">The app provides layer layout controls to help you focus on the details you need.</div>
+        </div>
+
+        <h3>Export & Print</h3>
+        <div class="qa">
+          <div class="q">Can I convert CAD drawings to PDF?</div>
+          <div class="a">Yes. You can export/convert drawings to PDF for easier communication and sharing.</div>
+        </div>
+        <div class="qa">
+          <div class="q">How does Wi‑Fi printing work?</div>
+          <div class="a">Use iOS printing to print drawings over Wi‑Fi to a compatible printer on the same network.</div>
+        </div>
+
+        <h3>Sync</h3>
+        <div class="qa">
+          <div class="q">How do I sync drawings with iCloud?</div>
+          <div class="a">Enable iCloud in iOS settings and use the in-app iCloud sync feature to keep drawings accessible across Apple devices.</div>
+        </div>
+
+        <h3>Subscriptions</h3>
+        <div class="qa">
+          <div class="q">What does Premium include?</div>
+          <div class="a">Premium benefits may include unlimited imports, unlimited high-definition viewing, unlimited CAD-to-PDF conversion, and removing pop-up ads.</div>
+        </div>
+        <div class="qa">
+          <div class="q">How do I cancel auto-renew?</div>
+          <div class="a">You can manage and cancel subscriptions in your Apple ID settings. Turn off auto-renew at least 24 hours before the end of the current period.</div>
+        </div>
+
+        <h3>Troubleshooting</h3>
+        <div class="qa">
+          <div class="q">The app cannot open a file. What should I do?</div>
+          <div class="a">Check that the file is supported and not corrupted. Try re-downloading the file, or exporting it again from the source app. If the issue persists, share the file details with support.</div>
+        </div>
+
+        <div class="note">
+          For additional help, open the App Store listing and use the support contact channel provided there:
+          <a href="https://apps.apple.com/us/app/cad-fastview-king-dwg-viewer/id6461084049" target="_blank" rel="noopener">App Store Page</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+
