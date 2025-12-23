@@ -19,6 +19,6 @@ App Store: https://apps.apple.com/us/app/cad-fastview-king-dwg-viewer/id64610840
  
 Then open:
 
-- http://www.cadview.cn/
+- https://www.cadview.cn/
 
  
