@@ -174,6 +174,37 @@
       color: #334155;
     }
 
+    .step-media {
+      margin-top: 12px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .step-media.two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .step-media figure {
+      margin: 0;
+      border: 1px solid rgba(15, 23, 42, 0.12);
+      border-radius: 14px;
+      overflow: hidden;
+      background: white;
+    }
+
+    .step-media img {
+      width: 100%;
+      height: auto;
+      display: block;
+      background: rgba(248, 250, 252, 1);
+    }
+
+    .step-media figcaption {
+      padding: 10px 12px;
+      font-size: 13px;
+      color: #475569;
+    }
+
     .note {
       margin-top: 18px;
       border-radius: 14px;
@@ -198,6 +229,10 @@
 
       .content h2 {
         font-size: 26px;
+      }
+
+      .step-media.two {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -233,6 +268,16 @@
               <span>Find the file in the other app</span>
             </div>
             <p>Choose the app where you've received or stored the file (WeChat as an example). Open the file, then select “Open in Other app”.</p>
+            <div class="step-media two">
+              <figure>
+                <img src="./pics/tutorial/1_1_import.jpg" alt="Step 1 - import entry in the source app" loading="lazy">
+                <figcaption>Example: Find the file and open the import/share entry.</figcaption>
+              </figure>
+              <figure>
+                <img src="./pics/tutorial/1_2_click_file.jpg" alt="Step 1 - click the file to open its preview" loading="lazy">
+                <figcaption>Tap the file to preview it before sending to another app.</figcaption>
+              </figure>
+            </div>
           </div>
 
           <div class="step">
@@ -241,6 +286,12 @@
               <span>Select CAD FastView King</span>
             </div>
             <p>In the pop-up sheet, select “Open with this app”.</p>
+            <div class="step-media">
+              <figure>
+                <img src="./pics/tutorial/2_open.jpg" alt="Step 2 - choose CAD FastView King in the open-in list" loading="lazy">
+                <figcaption>Select CAD FastView King from the “Open in” list.</figcaption>
+              </figure>
+            </div>
           </div>
 
           <div class="step">
@@ -260,4 +311,3 @@
   </main>
 </body>
 </html>
-
