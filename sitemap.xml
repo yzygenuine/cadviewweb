@@ -11,6 +11,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.cadview.cn/" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.cadview.cn/zh-Hans/" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.cadview.cn/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.cadview.cn/hi/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.cadview.cn/ko/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cadview.cn/" />
   </url>
 
@@ -23,6 +25,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.cadview.cn/" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.cadview.cn/zh-Hans/" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.cadview.cn/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.cadview.cn/hi/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.cadview.cn/ko/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cadview.cn/" />
   </url>
 
@@ -35,6 +39,36 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.cadview.cn/" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.cadview.cn/zh-Hans/" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.cadview.cn/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.cadview.cn/hi/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.cadview.cn/ko/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cadview.cn/" />
+  </url>
+
+  <!-- Hindi Page -->
+  <url>
+    <loc>https://www.cadview.cn/hi/</loc>
+    <lastmod>2026-01-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cadview.cn/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.cadview.cn/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.cadview.cn/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.cadview.cn/hi/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.cadview.cn/ko/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cadview.cn/" />
+  </url>
+
+  <!-- Korean Page -->
+  <url>
+    <loc>https://www.cadview.cn/ko/</loc>
+    <lastmod>2026-01-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cadview.cn/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.cadview.cn/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.cadview.cn/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.cadview.cn/hi/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.cadview.cn/ko/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cadview.cn/" />
   </url>
 

@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CAD FastView King - iOS के लिए DWG/DXF व्यूअर</title>
+  <meta name="description" content="CAD FastView King iPhone और iPad के लिए एक तेज़ DWG/DXF/DWT/PDF व्यूअर है। CAD को PDF में बदलें, iCloud सिंक करें और Wi-Fi पर प्रिंट करें।">
+  <meta name="keywords" content="DWG व्यूअर, DXF व्यूअर, DWT व्यूअर, CAD व्यूअर, CAD से PDF, iCloud सिंक, Wi-Fi प्रिंटिंग, iOS CAD">
+  <meta name="author" content="CAD FASTVIEW KING">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="CAD FastView King - iOS के लिए DWG/DXF व्यूअर">
+  <meta property="og:description" content="DWG/DXF/DWT/PDF के लिए तेज़ व्यूइंग। PDF में बदलें, iCloud सिंक, Wi‑Fi प्रिंटिंग।">
+  <meta property="og:url" content="https://apps.apple.com/in/app/cad-fastview-king-dwg-viewer/id6461084049">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CAD FastView King">
+  <meta property="og:locale" content="hi_IN">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CAD FastView King - iOS के लिए DWG/DXF व्यूअर">
+  <meta name="twitter:description" content="DWG/DXF/DWT/PDF के लिए तेज़ व्यूइंग। PDF में बदलें, iCloud सिंक, Wi‑Fi प्रिंटिंग।">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="CAD FastView King">
+
+  <link rel="preconnect" href="https://apps.apple.com">
+
+  <link rel="icon" type="image/png" href="../pics/icon.png">
+  <link rel="apple-touch-icon" href="../pics/icon.png">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "CAD FastView King",
+      "description": "iOS के लिए मल्टीफंक्शनल CAD ड्राइंग व्यूअर। DWG/DXF/DWT/PDF की तेज़ व्यूइंग, CAD से PDF रूपांतरण, iCloud सिंक और Wi‑Fi प्रिंटिंग।",
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "iOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "downloadUrl": "https://apps.apple.com/in/app/cad-fastview-king-dwg-viewer/id6461084049",
+      "featureList": [
+        "DWG/DXF/DWT/PDF के लिए तेज़ व्यूइंग",
+        "लेयर लेआउट और कई व्यूइंग विकल्प",
+        "CAD से PDF रूपांतरण",
+        "iCloud सिंक्रोनाइज़ेशन",
+        "Wi‑Fi प्रिंटिंग",
+        "क्लाउड ड्राइंग प्रबंधन"
+      ]
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "CAD FastView King",
+      "url": "https://apps.apple.com/in/app/cad-fastview-king-dwg-viewer/id6461084049",
+      "description": "CAD FastView King का लैंडिंग पेज - iOS के लिए DWG/DXF व्यूअर।"
+    }
+  </script>
+<!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JFL4RZS5PY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JFL4RZS5PY');
+  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Nirmala UI", sans-serif;
+      line-height: 1.6;
+      color: #0f172a;
+      background: linear-gradient(135deg, #0ea5e9 0%, #22c55e 100%);
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(10px);
+      padding: 1rem 0;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: inherit;
+      min-width: 0;
+    }
+
+    .app-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(45deg, #16a34a, #0ea5e9);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+      flex: 0 0 auto;
+      overflow: hidden;
+    }
+
+    .app-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .logo-title {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .logo-title h1 {
+      font-size: 22px;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.2;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .tagline {
+      font-size: 13px;
+      color: #475569;
+      margin-top: 2px;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex: 0 0 auto;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 14px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: #0f172a;
+      color: #fff;
+      box-shadow: 0 10px 22px rgba(15, 23, 42, 0.25);
+    }
+
+    .btn-primary:hover {
+      background: #1f2937;
+      transform: translateY(-1px);
+      box-shadow: 0 14px 30px rgba(15, 23, 42, 0.3);
+    }
+
+    .btn-secondary {
+      background: rgba(15, 23, 42, 0.08);
+      color: #0f172a;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(15, 23, 42, 0.12);
+      transform: translateY(-1px);
+    }
+
+    main {
+      padding: 64px 0;
+    }
+
+    .hero {
+      text-align: center;
+      color: white;
+      margin-bottom: 72px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      font-weight: 900;
+      margin-bottom: 16px;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    }
+
+    .hero p {
+      font-size: 20px;
+      opacity: 0.95;
+      max-width: 740px;
+      margin: 0 auto 32px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 26px;
+      margin: 48px 0 0;
+    }
+
+    .stat-item {
+      text-align: center;
+      color: white;
+      padding: 6px 8px;
+    }
+
+    .stat-number {
+      font-size: 34px;
+      font-weight: 900;
+      margin-bottom: 6px;
+    }
+
+    .stat-label {
+      font-size: 15px;
+      opacity: 0.9;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 34px;
+      margin-bottom: 72px;
+    }
+
+    .feature-card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 38px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.14);
+    }
+
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 18px;
+      background: linear-gradient(45deg, #0ea5e9, #22c55e);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+    }
+
+    .feature-card h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+      color: #0f172a;
+      font-weight: 800;
+    }
+
+    .feature-card p {
+      color: #475569;
+      font-size: 16px;
+    }
+
+    .screenshots-section {
+      margin-bottom: 72px;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 44px;
+      color: white;
+    }
+
+    .section-header h3 {
+      font-size: 36px;
+      font-weight: 900;
+      margin-bottom: 12px;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    }
+
+    .section-header p {
+      font-size: 18px;
+      opacity: 0.95;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .screenshots-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 26px;
+      max-width: 1060px;
+      margin: 0 auto;
+      justify-content: center;
+    }
+
+    .screenshot-item {
+      flex: 0 0 calc(33.333% - 18px);
+      min-width: 280px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .screenshot-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .screenshot-item img {
+      width: 100%;
+      height: 320px;
+      object-fit: contain;
+      background: rgba(248, 250, 252, 1);
+      display: block;
+    }
+
+    .screenshot-caption {
+      padding: 18px 20px 20px;
+      text-align: center;
+    }
+
+    .screenshot-caption h4 {
+      font-size: 18px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+
+    .screenshot-caption p {
+      color: #475569;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .download-section {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 54px 36px;
+      text-align: center;
+      margin-bottom: 72px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .download-section h3 {
+      font-size: 32px;
+      margin-bottom: 14px;
+      color: #0f172a;
+      font-weight: 900;
+    }
+
+    .download-section p {
+      font-size: 18px;
+      color: #475569;
+      margin-bottom: 28px;
+      max-width: 780px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .download-buttons {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    footer {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 40px 0;
+      text-align: center;
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-bottom: 22px;
+      text-align: left;
+    }
+
+    .footer-section h4 {
+      font-size: 16px;
+      margin-bottom: 12px;
+      color: #0f172a;
+      font-weight: 900;
+    }
+
+    .footer-section p,
+    .footer-section a {
+      color: #475569;
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .footer-section a:hover {
+      color: #0ea5e9;
+    }
+
+    .copyright {
+      color: #64748b;
+      font-size: 13px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    @media (max-width: 1200px) {
+      .screenshot-item {
+        flex: 0 0 calc(50% - 13px);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .header-actions {
+        width: 100%;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .hero h2 {
+        font-size: 34px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .section-header h3 {
+        font-size: 28px;
+      }
+
+      .section-header p {
+        font-size: 16px;
+      }
+
+      .screenshot-item {
+        flex: 0 0 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a class="logo" href="https://apps.apple.com/in/app/cad-fastview-king-dwg-viewer/id6461084049" target="_blank" rel="noopener">
+          <div class="app-icon">
+            <img src="../pics/icon.png" alt="CAD FastView King app icon">
+          </div>
+          <div class="logo-title">
+            <h1>CAD FastView King</h1>
+            <div class="tagline">DWG/DXF व्यूअर · CAD से PDF · iCloud सिंक</div>
+          </div>
+        </a>
+        <div class="header-actions">
+          <!-- <a class="btn btn-secondary" href="#features">Features</a> -->
+          <a class="btn btn-primary" href="https://apps.apple.com/in/app/cad-fastview-king-dwg-viewer/id6461084049" target="_blank" rel="noopener">App Store पर डाउनलोड करें</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="hero">
+        <h2>कहीं भी, कभी भी CAD ड्राइंग देखें</h2>
+        <p>CAD FastView King आपको DWG/DXF/DWT/PDF फ़ाइलों को जल्दी देखने, ड्राइंग को PDF में बदलने, iCloud के माध्यम से सिंक करने और Wi‑Fi पर प्रिंट करने में मदद करता है। आर्किटेक्ट्स, इंजीनियरों और फील्ड टीमों के लिए बनाया गया।</p>
+
+        <div class="stats">
+          <div class="stat-item">
+            <div class="stat-number">लाखों</div>
+            <div class="stat-label">पेशेवर दुनिया भर में</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">4.8★</div>
+            <div class="stat-label">App Store रेटिंग</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">DWG/DXF</div>
+            <div class="stat-label">साथ में DWT और PDF</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>तेज़ व्यूइंग</h3>
+          <p>साइट पर जाँच और त्वरित समीक्षा के लिए सहज ज़ूम और पैन के साथ मुख्यधारा की CAD ड्राइंग को तेज़ी से ब्राउज़ करें।</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🧩</div>
+          <h3>उत्तम प्रदर्शन</h3>
+          <p>विवरणों को स्पष्ट रूप से पढ़ने के लिए कई व्यूइंग विकल्पों, पृष्ठभूमि और लेयर लेआउट के साथ उच्च-परिभाषा प्रतिपादन।</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">☁️</div>
+          <h3>एक-क्लिक iCloud सिंक</h3>
+          <p>iPhone, iPad और Mac पर ड्राइंग सिंक करें ताकि आप वहीं से काम शुरू कर सकें जहाँ आपने छोड़ा था।</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📄</div>
+          <h3>PDF में बदलें</h3>
+          <p>टीमों और ग्राहकों के साथ आसान संचार, साझाकरण और संग्रह के लिए CAD ड्राइंग को PDF में बदलें।</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🖨️</div>
+          <h3>Wi‑Fi प्रिंटिंग</h3>
+          <p>अतिरिक्त चरणों के बिना त्वरित हैंडऑफ़ और साइट दस्तावेज़ीकरण के लिए Wi‑Fi पर सीधे ड्राइंग प्रिंट करें।</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🛠️</div>
+          <h3>प्रो वर्कफ़्लो</h3>
+          <p>आर्किटेक्चर, इंजीनियरिंग और निर्माण के लिए डिज़ाइन किए गए टूल के साथ ड्राइंग आयात करें, देखें, प्रबंधित करें और साझा करें।</p>
+        </div>
+      </section>
+
+      <section class="screenshots-section">
+        <div class="section-header">
+          <h3>यह कैसे काम करता है</h3>
+          <p>प्रमुख वर्कफ़्लो दिखाने वाले iPhone और iPad से वास्तविक स्क्रीनशॉट।</p>
+        </div>
+
+        <div class="screenshots-grid">
+          <div class="screenshot-item">
+            <img src="../pics/hi/iphone_1_dwg_dxf_dws_dwt.jpg" alt="iPhone screenshot - open DWG/DXF/DWS/DWT files" loading="lazy">
+            <div class="screenshot-caption">
+              <h4>CAD फ़ाइलें खोलें</h4>
+              <p>DWG/DXF/DWS/DWT जैसे प्रारूपों में ड्राइंग को जल्दी देखें।</p>
+            </div>
+          </div>
+
+          <div class="screenshot-item">
+            <img src="../pics/hi/iphone_2_Convert%20CAD%20docs%20to%20PDF.jpg" alt="iPhone screenshot - convert CAD docs to PDF" loading="lazy">
+            <div class="screenshot-caption">
+              <h4>PDF में बदलें</h4>
+              <p>आसान संचार और साझाकरण के लिए ड्राइंग को PDF के रूप में निर्यात करें।</p>
+            </div>
+          </div>
+
+          <div class="screenshot-item">
+            <img src="../pics/hi/iphone_3_Multi-functional%20viewing%20model.jpg" alt="iPhone screenshot - multi-functional viewing model" loading="lazy">
+            <div class="screenshot-caption">
+              <h4>व्यूइंग विकल्प</h4>
+              <p>अपने वर्कफ़्लो से मेल खाने के लिए व्यूइंग मोड और सेटिंग्स स्विच करें।</p>
+            </div>
+          </div>
+
+          <div class="screenshot-item">
+            <img src="../pics/hi/IPAD-1.jpg" alt="iPad screenshot 1" loading="lazy">
+            <div class="screenshot-caption">
+              <h4>iPad स्क्रीनशॉट 1</h4>
+              <p>आरामदायक समीक्षा के लिए बड़ी स्क्रीन के लिए अनुकूलित।</p>
+            </div>
+          </div>
+
+          <div class="screenshot-item">
+            <img src="../pics/hi/IPAD-2.jpg" alt="iPad screenshot 2" loading="lazy">
+            <div class="screenshot-caption">
+              <h4>iPad स्क्रीनशॉट 2</h4>
+              <p>टैबलेट-अनुकूल UI के साथ प्रोजेक्ट्स पर आसानी से काम करें।</p>
+            </div>
+          </div>
+
+          <div class="screenshot-item">
+            <img src="../pics/hi/IPAD-3.jpg" alt="iPad screenshot 3" loading="lazy">
+            <div class="screenshot-caption">
+              <h4>iPad स्क्रीनशॉट 3</h4>
+              <p>iPad पर विवरण पढ़ने और सहयोग के लिए डिज़ाइन किया गया।</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="download-section">
+        <h3>iOS पर CAD कार्य के लिए निर्मित</h3>
+        <p>प्रोजेक्ट्स में ड्राइंग को जल्दी देखें और साझा करें। PDF में बदलें, Wi‑Fi पर प्रिंट करें और iCloud के साथ सिंक करें — सब कुछ एक ही जगह पर।</p>
+        <div class="download-buttons">
+          <a class="btn btn-primary" href="https://apps.apple.com/in/app/cad-fastview-king-dwg-viewer/id6461084049" target="_blank" rel="noopener">CAD FastView King प्राप्त करें</a>
+          <a class="btn btn-secondary" href="https://apps.apple.com/in/app/cad-fastview-king-dwg-viewer/id6461084049" target="_blank" rel="noopener">App Store पर देखें</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>उत्पाद</h4>
+          <p><a href="https://apps.apple.com/in/app/cad-fastview-king-dwg-viewer/id6461084049" target="_blank" rel="noopener">डाउनलोड करें</a></p>
+          <p><a href="#features">विशेषताएँ</a></p>
+          <p><a href="../import_from_other_apps_tutorial.html">आयात ट्यूटोरियल</a></p>
+        </div>
+
+        <div class="footer-section">
+          <h4>कानूनी</h4>
+          <p><a href="../privacy_policy.html">गोपनीयता नीति</a></p>
+          <p><a href="../user_agreement.html">उपयोगकर्ता समझौता</a></p>
+          <p><a href="../SubscriptionTerms.html">सदस्यता शर्तें</a></p>
+        </div>
+
+        <div class="footer-section">
+          <h4>सहायता</h4>
+          <p><a href="../FAQ.html">सामान्य प्रश्न</a></p>
+          <p>संपर्क करें: <a href="mailto:cadview@163.com">cadview@163.com</a></p>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; CAD FASTVIEW KING. सर्वाधिकार सुरक्षित।</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
