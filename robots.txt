@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.cadview.cn/sitemap.xml
+
+# 禁止抓取某些文件类型
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /CNAME
+
