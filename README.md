@@ -1,12 +1,12 @@
-# CAD FastView King — Landing Page
+# CAD FastView — Landing Page
 
-This folder contains a lightweight, static landing website for the iOS app **CAD FastView King** (DWG/DXF viewer).
+This folder contains a lightweight, static landing website for the iOS app **CAD FastView** (DWG/DXF viewer).
 
 ## App Overview
 
-**CAD FastView King** is a multifunctional CAD drawing viewing and sharing application for iPhone/iPad. It supports viewing CAD files (including **DWG/DXF/DWT/PDF**), exporting drawings to **PDF**, **iCloud synchronization**, and **Wi‑Fi printing**.
+**CAD FastView** is a multifunctional CAD drawing viewing and sharing application for iPhone/iPad/Mac. It supports viewing CAD files (including **DWG/DXF/DWT/PDF**), exporting drawings to **PDF**, **iCloud synchronization**, and **Wi‑Fi printing**.
 
-App Store: https://apps.apple.com/us/app/cad-fastview-king-dwg-viewer/id6461084049
+App Store: https://apps.apple.com/app/id6461084049
 
 ## Website Pages
 
